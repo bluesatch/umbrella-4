@@ -14,6 +14,7 @@
     <header class="header" id="header">
         <section class="container">
             <div class="row">
+                <!-- the image can be placed inside of the the h1 along with the text-->
                 <div class="col-md-1">           
                         <img src="media/umbrella-logo.png" alt="umbrella-logo" class="umbrella-logo" />
                 </div>
@@ -76,10 +77,12 @@
         </div>
         <div class="container section2">
             <div class="row">
+                <!-- is this a nav?-->
                 <nav class="h2-sec2">
                      <h2 class="welcome">WELCOME TO <span class="elegantica">ELEGANTICA</span> - A MINIMAL BUSINESS THEME</h2>
                 </nav>
             </div>
+            <!--is this a nav?? Use .row instead and place them in .col-md-3 -->
             <nav class="block-sec2 justify-content-evenly">
                 <div class="row">
                         <div class="col-sm-3">
@@ -126,6 +129,7 @@
                             </div>
                         </div>
                         <div class="col">
+                            <!-- use h3 instead of h4 -->
                             <h4>BUSINESS CARDS</h4>
                             <button class="btn3">Video</button><button class="btn3">Interview</button>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates omnis suscipit at iusto, distinctio rerum. Commodi ea?</p>
@@ -170,6 +174,7 @@
                     <h2>OUR MAJOR ADVERTISERS</h2>
             </div>
             <div class="row">
+                <!-- You could put all of the images into one div and use display:flex and flex-wrap: wrap-->
                 <div class="block9" id="block9">
                     <img src="media/watermelocious.jpg" alt="watermelocious" class="watermelocious" />
                 </div>
@@ -199,6 +204,7 @@
                         <h5>LITTLE ABOUT US</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas et voluptatibus accusantium, labore vero non voluptate officiis illo id recusandae?</p>
                         <h5>FOLLOW US</h5>
+                        <!-- these can be put in a ul>li and apply .nav to the ul and .nav-item to the li-->
                         <svg class="facebook"><use xlink:href="#icon-facebook"></use></svg>
                         <svg class="twitter"><use xlink:href="#icon-twitter"></use></svg>
                         <svg class="rss"><use xlink:href="#icon-rss"></use></svg>
@@ -211,6 +217,11 @@
                     <div class="block16">
                         <h5>ARCHIVES</h5>
                         <P>March 2012</P>
+                        <!-- give each p tag a border-bottom and then specify dotted 
+                            ex: p {
+                                    border-bottom: 1px dotted gray;
+                                }
+                        -->
                         <P>..................................................</P>
                         <p>February 2012</p>
                         <P>..................................................</P>
@@ -231,7 +242,7 @@
                         <p>+386408007561</p>
                     </div>
                 </div>
-                <div class="col.sm.3">  
+                <div class="col.sm.3">  <!-- col-sm-3 -->
                     <div class="block18">
                         <h5>SIGN TO NEWSLETTER</h5>
                         <div class="col-form-label-sm">
@@ -242,6 +253,7 @@
                                 </div>
                         </div>   
                         <div class="form-control-sm">
+                            <!-- Nice use of form-group-->
                                 <div class="form-group">
                                     <label for="email">Email</label>
                                     <input type="text" class="email">
